@@ -1,0 +1,28 @@
+{
+  "name": "flesch",
+  "main": "index.js",
+  "description": "Formula to detect the ease of reading a text according to Flesch Reading Ease (1975)",
+  "license": "MIT",
+  "keywords": [
+    "flesch",
+    "readability",
+    "formula"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wooorm/flesch.git"
+  },
+  "authors": [
+    "Titus Wormer <tituswormer@gmail.com>"
+  ],
+  "ignore": [
+    ".*",
+    "*.log",
+    "*.md",
+    "component.json",
+    "package.json",
+    "coverage",
+    "node_modules",
+    "spec"
+  ]
+}
