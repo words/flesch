@@ -4,7 +4,7 @@
  * Module dependencies (flesch, assert).
  */
 
-var flesch = require('..'),
+var flesch = require('./'),
     assert = require('assert');
 
 /**
