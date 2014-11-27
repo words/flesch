@@ -1,4 +1,4 @@
-# flesch [![Build Status](https://travis-ci.org/wooorm/flesch.svg?branch=master)](https://travis-ci.org/wooorm/flesch) [![Coverage Status](https://img.shields.io/coveralls/wooorm/flesch.svg)](https://coveralls.io/r/wooorm/flesch?branch=master)
+# flesch [![Build Status](https://img.shields.io/travis/wooorm/flesch.svg?style=flat)](https://travis-ci.org/wooorm/flesch) [![Coverage Status](https://img.shields.io/coveralls/wooorm/flesch.svg?style=flat)](https://coveralls.io/r/wooorm/flesch?branch=master)
 
 Formula to detect the ease of reading a text according to [Flesch Reading Ease](http://en.wikipedia.org/wiki/Flesch–Kincaid_readability_tests#Flesch_Reading_Ease).
 
