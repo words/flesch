@@ -8,8 +8,8 @@
     "readability",
     "formula"
   ],
+  "repository": "wooorm/flesch",
   "scripts": [
     "index.js"
-  ],
-  "repository": "wooorm/flesch"
+  ]
 }
