@@ -1,12 +1,16 @@
 'use strict';
 
 /**
- * The constants as defined by the revised Flesch Reading Ease Formula.
+ * Constants.
  */
 
-var SENTENCE_WEIGHT = 1.015,
-    WORD_WEIGHT = 84.6,
-    BASE = 206.835;
+var SENTENCE_WEIGHT,
+    WORD_WEIGHT,
+    BASE;
+
+SENTENCE_WEIGHT = 1.015;
+WORD_WEIGHT = 84.6;
+BASE = 206.835;
 
 /**
  * Get the grade level of a given value according to the Flesch Reading Ease
