@@ -80,4 +80,4 @@ The values have the following semantics:
 
 ## License
 
-MIT © Titus Wormer
+MIT © [Titus Wormer](http://wooorm.com)
