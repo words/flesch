@@ -44,9 +44,9 @@ describe('flesch()', function () {
          */
 
         roundAssert(flesch({
-            'sentence' : 1,
-            'word' : 6,
-            'syllable' : 6
+            'sentence': 1,
+            'word': 6,
+            'syllable': 6
         }), 116.145);
 
         /**
@@ -59,9 +59,9 @@ describe('flesch()', function () {
          */
 
         roundAssert(flesch({
-            'sentence' : 1,
-            'word' : 16,
-            'syllable' : 22
+            'sentence': 1,
+            'word': 16,
+            'syllable': 22
         }), 74.27);
 
         /**
@@ -74,9 +74,9 @@ describe('flesch()', function () {
          */
 
         roundAssert(flesch({
-            'sentence' : 1,
-            'word' : 13,
-            'syllable' : 26
+            'sentence': 1,
+            'word': 13,
+            'syllable': 26
         }), 24.44);
     });
 });
