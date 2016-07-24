@@ -1,85 +1,68 @@
+/**
+ * @author Titus Wormer
+ * @copyright 2014 Titus Wormer
+ * @license MIT
+ * @module flesch
+ * @fileoverview Test suite for `flesch`.
+ */
+
 'use strict';
 
-/**
- * Dependencies.
- */
+/* Dependencies. */
+var test = require('tape');
+var nan = require('is-nan');
+var flesch = require('./');
 
-var flesch,
-    assert;
+/* Formula. */
+test('flesch', function (t) {
+  t.ok(nan(flesch()), 'NaN when an invalid value is given');
 
-flesch = require('./');
-assert = require('assert');
+  /*
+   * The cat sat on the mat.
+   *
+   * Sentences: 1
+   * Words: 6
+   * Syllables: 6
+   */
+  t.equal(round(flesch({
+    sentence: 1,
+    word: 6,
+    syllable: 6
+  })), 116.145);
 
-/**
- * Utilities.
- */
+  /*
+   * This sentence, taken as a reading passage unto itself, is being
+   * used to prove a point.
+   *
+   * Sentences: 1
+   * Words: 16
+   * Syllables: 22
+   */
 
-function roundAssert(a, b) {
-    assert(Math.round(a * 1000000) === Math.round(b * 1000000));
-}
+  t.equal(round(flesch({
+    sentence: 1,
+    word: 16,
+    syllable: 22
+  })), 74.27);
 
-/**
- * Tests.
- */
+  /*
+   * The Australian platypus is seemingly a hybrid of a mammal and
+   * reptilian creature.
+   *
+   * Sentences: 1
+   * Words: 13
+   * Syllables: 26
+   */
 
-describe('flesch()', function () {
-    it('should be of type `function`', function () {
-        assert(typeof flesch === 'function');
-    });
+  t.equal(round(flesch({
+    sentence: 1,
+    word: 13,
+    syllable: 26
+  })), 24.44);
 
-    it('should work', function () {
-        var result;
-
-        /**
-         * Return NaN when an invalid value is given.
-         */
-
-        result = flesch();
-
-        assert(result !== result);
-
-        /**
-         * The cat sat on the mat
-         *
-         * Sentences: 1
-         * Words: 6
-         * Syllables: 6
-         */
-
-        roundAssert(flesch({
-            'sentence': 1,
-            'word': 6,
-            'syllable': 6
-        }), 116.145);
-
-        /**
-         * This sentence, taken as a reading passage unto itself, is being
-         * used to prove a point.
-         *
-         * Sentences: 1
-         * Words: 16
-         * Syllables: 22
-         */
-
-        roundAssert(flesch({
-            'sentence': 1,
-            'word': 16,
-            'syllable': 22
-        }), 74.27);
-
-        /**
-         * The Australian platypus is seemingly a hybrid of a mammal and
-         * reptilian creature.
-         *
-         * Sentences: 1
-         * Words: 13
-         * Syllables: 26
-         */
-
-        roundAssert(flesch({
-            'sentence': 1,
-            'word': 13,
-            'syllable': 26
-        }), 24.44);
-    });
+  t.end();
 });
+
+function round(val) {
+  return Math.round(val * 1e6) / 1e6;
+}
