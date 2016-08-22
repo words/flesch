@@ -28,14 +28,14 @@ flesch({
 // 116.14500000000001
 
 /* For “The Australian platypus is seemingly a hybrid of
- * mammal and reptilian creature.” (1 sentence, 13 words,
- * 26 syllables). */
+ * mammal and reptilian creature.” (1 sentence, 12 words,
+ * 23 syllables). */
 flesch({
   sentence: 1,
-  word: 13,
-  syllable: 26
+  word: 12,
+  syllable: 23
 });
-// 24.440000000000026
+// 32.504999999999995
 ```
 
 ## API
