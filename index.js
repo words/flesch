@@ -1,12 +1,3 @@
-/**
- * @author Titus Wormer
- * @copyright 2014 Titus Wormer
- * @license MIT
- * @module flesch
- * @fileoverview Detect ease of reading according to the
- *   the Flesch Reading Ease Formula.
- */
-
 'use strict';
 
 /* Expose. */

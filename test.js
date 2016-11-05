@@ -1,11 +1,3 @@
-/**
- * @author Titus Wormer
- * @copyright 2014 Titus Wormer
- * @license MIT
- * @module flesch
- * @fileoverview Test suite for `flesch`.
- */
-
 'use strict';
 
 /* Dependencies. */
