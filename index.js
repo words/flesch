@@ -1,7 +1,7 @@
 'use strict';
 
 /* Expose. */
-module.exports = exports = flesch;
+module.exports = flesch;
 
 /* Constants. */
 var SENTENCE_WEIGHT = 1.015;
