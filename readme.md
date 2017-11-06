@@ -80,13 +80,13 @@ The values have the following semantics:
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/flesch.svg
+[travis-badge]: https://img.shields.io/travis/words/flesch.svg
 
-[travis]: https://travis-ci.org/wooorm/flesch
+[travis]: https://travis-ci.org/words/flesch
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/flesch.svg
+[codecov-badge]: https://img.shields.io/codecov/c/github/words/flesch.svg
 
-[codecov]: https://codecov.io/github/wooorm/flesch
+[codecov]: https://codecov.io/github/words/flesch
 
 [npm]: https://docs.npmjs.com/cli/install
 
@@ -96,4 +96,4 @@ The values have the following semantics:
 
 [formula]: http://en.wikipedia.org/wiki/Flesch–Kincaid_readability_tests#Flesch_Reading_Ease
 
-[syllable]: https://github.com/wooorm/syllable
+[syllable]: https://github.com/words/syllable
