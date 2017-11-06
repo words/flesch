@@ -1,6 +1,6 @@
 {
   "name": "flesch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Formula to detect the ease of reading a text according to Flesch Reading Ease (1975)",
   "license": "MIT",
   "keywords": [
