@@ -6,3 +6,4 @@ data/
 node_modules/
 flesch.js
 flesch.min.js
+yarn.lock
