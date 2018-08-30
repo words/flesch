@@ -5,20 +5,13 @@ node_js:
 - '9.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    email: tituswormer@gmail.com
-    api_key:
-      secure: JBIBDu3dIXaiRz0wWrnt3TgFenrdtfzYfXS56xueRRUrL4noejaFIvOlzbs01t4gL7UKCmPVIwvzdTi9V7Tnm/vWlaE5m5mB8wU9k6ENM+v+qJTawKC7KKLzeokcWVnNOellKV6uIus0bbNkH1tPz6QbhPBpXxzkk44XgW1FyFs=
-    on:
-      tags: true
-      node: '4.0'
-  - provider: releases
-    skip_cleanup: true
-    api_key:
-      secure: Ar/hFL7w8ZhcHegfjePRxKa98EsrUy69Ht/8Ad3T53ggIJP+AoyzpJVI/7KoZ+u0Rh/1BqLHTVwCQlqLJodyT19ZOfFz0AUHEXxuuZfkaqKBCGfSOb17ECaOsBf+IUmNY/G9RfWKgc0uYE7ACX08z3B6Y9Fo/09hO2EVhJHHEgs=
-    file:
-      - "flesch.js"
-      - "flesch.min.js"
-    on:
-      tags: true
-      node: '9.0'
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: Ar/hFL7w8ZhcHegfjePRxKa98EsrUy69Ht/8Ad3T53ggIJP+AoyzpJVI/7KoZ+u0Rh/1BqLHTVwCQlqLJodyT19ZOfFz0AUHEXxuuZfkaqKBCGfSOb17ECaOsBf+IUmNY/G9RfWKgc0uYE7ACX08z3B6Y9Fo/09hO2EVhJHHEgs=
+  file:
+    - "flesch.js"
+    - "flesch.min.js"
+  on:
+    tags: true
+    node: '9.0'
