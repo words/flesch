@@ -2,7 +2,7 @@
 
 var test = require('tape');
 var nan = require('is-nan');
-var flesch = require('./');
+var flesch = require('.');
 
 test('flesch', function (t) {
   t.ok(nan(flesch()), 'NaN when an invalid value is given');
