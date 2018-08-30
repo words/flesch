@@ -16,26 +16,14 @@ npm install flesch
 ## Usage
 
 ```js
-var flesch = require('flesch');
+var flesch = require('flesch')
 
-/* For “The cat sat on the mat” (1 sentence, 6 words,
- * 6 syllables). */
-flesch({
-  sentence: 1,
-  word: 6,
-  syllable: 6
-});
-// 116.14500000000001
+// For “The cat sat on the mat” (1 sentence, 6 words, 6 syllables).
+flesch({sentence: 1, word: 6, syllable: 6}) // => 116.14500...
 
-/* For “The Australian platypus is seemingly a hybrid of
- * mammal and reptilian creature.” (1 sentence, 12 words,
- * 23 syllables). */
-flesch({
-  sentence: 1,
-  word: 12,
-  syllable: 23
-});
-// 32.504999999999995
+// For “The Australian platypus is seemingly a hybrid of mammal and reptilian
+// creature.” (1 sentence, 12 words, 23 syllables).
+flesch({sentence: 1, word: 12, syllable: 23}) // => 32.50499...
 ```
 
 ## API
