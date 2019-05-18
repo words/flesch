@@ -1,8 +1,8 @@
 language: node_js
 sudo: false
 node_js:
-- lts/boron
-- node
+  - lts/dubnium
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
@@ -10,7 +10,7 @@ deploy:
   api_key:
     secure: Ar/hFL7w8ZhcHegfjePRxKa98EsrUy69Ht/8Ad3T53ggIJP+AoyzpJVI/7KoZ+u0Rh/1BqLHTVwCQlqLJodyT19ZOfFz0AUHEXxuuZfkaqKBCGfSOb17ECaOsBf+IUmNY/G9RfWKgc0uYE7ACX08z3B6Y9Fo/09hO2EVhJHHEgs=
   file:
-    - "flesch.js"
-    - "flesch.min.js"
+    - 'flesch.js'
+    - 'flesch.min.js'
   on:
     tags: true
