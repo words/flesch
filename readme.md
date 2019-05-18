@@ -5,8 +5,8 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Formula to detect the grade level of text according to the
-[Flesch Reading Ease][formula].
+Formula to detect the grade level of text according to the [Flesch Reading
+Ease][formula].
 
 See [syllable][] for detecting syllables.
 
@@ -35,12 +35,12 @@ flesch({sentence: 1, word: 12, syllable: 23}) // => 32.50499...
 
 ### `flesch(counts)`
 
-Given an object containing the number of words (`word`), the number
-of sentences (`sentence`), and the number of syllables  (`syllable`)
-in a document, returns the reading ease associated with the document.
+Given an object containing the number of words (`word`), the number of sentences
+(`sentence`), and the number of syllables  (`syllable`) in a document, returns
+the reading ease associated with the document.
 
-Returned values are 120 (every sentence consisting of only two
-one-syllable words), or lower (including negative values).
+Returned values are 120 (every sentence consisting of only two one-syllable
+words), or lower (including negative values).
 
 The values have the following semantics:
 
