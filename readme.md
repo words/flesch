@@ -80,8 +80,8 @@ The values have the following semantics:
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
-[formula]: http://en.wikipedia.org/wiki/Flesch–Kincaid_readability_tests#Flesch_Reading_Ease
+[formula]: https://en.wikipedia.org/wiki/Flesch–Kincaid_readability_tests#Flesch_Reading_Ease
 
 [syllable]: https://github.com/words/syllable
