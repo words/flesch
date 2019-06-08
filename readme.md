@@ -51,8 +51,7 @@ The values have the following semantics:
 |  0.0 – 30.0  | Best understood by university graduates             |
 
 Therefore we can use the following formula to approximate the average age a
-student would understand a document at with the following formula, given score
-`score`:
+student would understand a document at, given score `score`:
 
 ```js
 var age = 20 - Math.floor(score / 10)
