@@ -50,6 +50,14 @@ The values have the following semantics:
 |  60.0 – 70.0 | Easily understood by 13- to 15-year-old students    |
 |  0.0 – 30.0  | Best understood by university graduates             |
 
+Therefore we can use the following formula to approximate the average age a
+student would understand a document at with the following formula, given score
+`score`:
+
+```js
+var age = 20 - Math.floor(score / 10)
+```
+
 ## Related
 
 *   [`automated-readability`](https://github.com/words/automated-readability)
