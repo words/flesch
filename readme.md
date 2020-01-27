@@ -5,20 +5,20 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Formula to detect the grade level of text according to the [Flesch Reading
-Ease][formula].
+Formula to detect the grade level of text according to the [Flesch reading
+ease][formula].
 
-See [syllable][] for detecting syllables.
+See [`syllable`][syllable] for detecting syllables.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install flesch
 ```
 
-## Usage
+## Use
 
 ```js
 var flesch = require('flesch')
