@@ -12,6 +12,9 @@ See [`syllable`][syllable] for detecting syllables.
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -21,7 +24,7 @@ npm install flesch
 ## Use
 
 ```js
-var flesch = require('flesch')
+import {flesch} from 'flesch'
 
 // For “The cat sat on the mat” (1 sentence, 6 words, 6 syllables).
 flesch({sentence: 1, word: 6, syllable: 6}) // => 116.14500...
@@ -32,6 +35,9 @@ flesch({sentence: 1, word: 12, syllable: 23}) // => 32.50499...
 ```
 
 ## API
+
+This package exports the following identifiers: `flesch`.
+There is no default export.
 
 ### `flesch(counts)`
 
