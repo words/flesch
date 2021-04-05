@@ -8,7 +8,7 @@ var base = 206.835
 
 function flesch(counts) {
   if (!counts || !counts.sentence || !counts.word || !counts.syllable) {
-    return NaN
+    return Number.NaN
   }
 
   return (

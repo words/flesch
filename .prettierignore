@@ -1,3 +1,4 @@
 coverage/
 flesch.js
 flesch.min.js
+*.md
