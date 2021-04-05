@@ -80,9 +80,9 @@ var age = 20 - Math.floor(score / 10)
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/words/flesch.svg
+[build-badge]: https://github.com/words/flesch/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/words/flesch
+[build]: https://github.com/words/flesch/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/words/flesch.svg
 
