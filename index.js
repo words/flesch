@@ -1,6 +1,6 @@
-var sentenceWeight = 1.015
-var wordWeight = 84.6
-var base = 206.835
+const sentenceWeight = 1.015
+const wordWeight = 84.6
+const base = 206.835
 
 /**
  * @typedef {Object.<string, number>} FleschCounts
