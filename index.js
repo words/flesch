@@ -26,7 +26,7 @@ const base = 206.835
  * @param {Counts} counts
  *   Counts from input document.
  * @returns {number}
- *   Result is 120 (every sentence consisting of only two one-syllable words)
+ *   Result is `120` (every sentence consisting of only two one-syllable words)
  *   or lower (including negative values).
  *
  *   The values have the following semantics:
